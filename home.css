@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    animation: bounce 1.5s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+    top: 0;
+}
+
+nav ul li {
+    display: inline-block; /* display side by side */
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(213, 191, 162);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff8cc5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: bisque;
+}
+
+.intro-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name {
+    font-size: 100px;
+    color: rgb(213, 191, 162);
+}
+
+.intro-role {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ff8cc5;
+}
