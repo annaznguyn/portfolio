@@ -17,6 +17,7 @@ body {
     width: 70px;
     height: 70px;
     transition: transform 0.5s;
+    margin-left: 100px;
 }
 
 .logo:hover {
@@ -40,14 +41,19 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 10%;
+    padding: 10px 0;
     top: 0;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 70px;
 }
 
 nav ul li {
     display: inline-block; /* display side by side */
     list-style: none;
-    margin: 10px 15px;
+    margin: 10px 20px;
 }
 
 nav ul li a {
@@ -98,4 +104,21 @@ nav ul li a:hover {
     margin-top: 20px;
     font-size: 20px;
     color: #ff8cc5;
+}
+
+#contact-icon {
+    position: fixed;
+    display: flex;
+    right: 70px;
+    bottom: 20px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-icon a img {
+    filter: invert(60%) sepia(100%);
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
 }
