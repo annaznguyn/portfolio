@@ -84,7 +84,7 @@ nav ul li a:hover {
 }
 
 .intro-text {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,22 +96,22 @@ nav ul li a:hover {
 }
 
 .name {
-    font-size: 100px;
-    color: rgb(213, 191, 162);
+    font-size: 150px;
+    color: #ff8cc5;
 }
 
 .intro-role {
     margin-top: 20px;
-    font-size: 20px;
-    color: #ff8cc5;
+    font-size: 30px;
+    color: rgb(213, 191, 162);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #contact-icon {
     position: fixed;
     display: flex;
     right: 70px;
-    bottom: 20px;
-    /* margin-bottom: 40px; */
+    bottom: 60px;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
@@ -165,4 +165,29 @@ nav ul li a:hover {
 #contact-icon a:hover #resume-after {
     display: block;
     opacity: 1;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.about-content {
+    color: rgb(213, 191, 162);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+.about-content span {
+    color: #ff8cc5;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 450px;
 }
