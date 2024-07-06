@@ -91,20 +91,24 @@ nav ul li a:hover {
     height: 50%;
     width: 100%;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(213, 191, 162);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .name {
     font-size: 150px;
-    color: #ff8cc5;
+}
+
+.intro {
+    margin-top: 20px;
+    font-size: 30px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 .intro-role {
-    margin-top: 20px;
-    font-size: 30px;
-    color: rgb(213, 191, 162);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ff8cc5;
+    margin-top: 30px;
+    font-size: 50px;
 }
 
 #contact-icon {
@@ -179,12 +183,17 @@ nav ul li a:hover {
 .about-content {
     color: rgb(213, 191, 162);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    margin-right: 50px;
+    font-size: 30px;
+    margin-left: 40px;
 }
 
 .about-content span {
     color: #ff8cc5;
+}
+
+.about-me {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .profile-pic {
