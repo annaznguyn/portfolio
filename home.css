@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #000000;
 }
@@ -43,7 +47,8 @@ nav {
     flex-wrap: wrap;
     padding: 10px 0;
     top: 0;
-    background-color: grey;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -63,6 +68,7 @@ nav ul li a {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    float: right;
 }
 
 nav ul li a::after {
@@ -85,11 +91,10 @@ nav ul li a:hover {
 }
 
 .intro-text {
-    /* align-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 100px;
     height: 50%;
     width: 100%;
     text-align: center;
@@ -209,4 +214,34 @@ nav ul li a:hover {
 
 .tech-skills {
     margin-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-desc {
+    color: rgb(213, 191, 162);
+    margin-left: 50px;
+}
+
+.project-desc ul {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.project-desc ul li {
+    margin-bottom: 5px;
+}
+
+.chatroom-pic {
+    width: 500px;
+    height: 330px;
 }
