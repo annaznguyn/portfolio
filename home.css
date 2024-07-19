@@ -75,7 +75,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 2px;
-    background: #ff8cc5;
+    background: #50f6ff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -90,32 +90,43 @@ nav ul li a:hover {
     color: bisque;
 }
 
-.intro-text {
+.intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 200px;
     height: 50%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: rgb(213, 191, 162);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .name {
-    font-size: 150px;
+    font-size: 80px;
+    color: #50f6ff;
+    margin-bottom: 20px;
 }
 
-.intro {
+.greeting {
     margin-top: 20px;
     font-size: 30px;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
-.intro-role {
-    color: #ff8cc5;
-    margin-top: 30px;
-    font-size: 50px;
+.description {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.description span {
+    color: #50f6ff;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 300px;
+    margin-left: 200px;
 }
 
 #contact-icon {
@@ -178,42 +189,33 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-#about {
+
+#skills {
+    color: #50f6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 230px;
+    margin-bottom: 200px;
+}
+
+#skills ul li {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 100px;
-    justify-content: center;
-}
-
-.about-content {
-    color: rgb(213, 191, 162);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin-left: 40px;
-}
-
-.about-content span {
-    color: #ff8cc5;
-}
-
-.about-me {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.profile-pic {
-    width: 400px;
-    height: 450px;
-}
-
-.description {
-    margin-bottom: 40px;
-}
-
-.tech-skills {
     margin-bottom: 20px;
+}
+
+.back {
+    margin-left: 12px;
+}
+
+.spec-skills {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 15px;
+    color: rgb(213, 191, 162);
 }
 
 #projects {
