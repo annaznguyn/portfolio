@@ -5,8 +5,17 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* smoothly move to other section when clicking on them in the nav bar */
 }
+
+/* html::-webkit-scrollbar {
+    width: 70px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: url('images/soot-sprite-scrollbar2.png') center/contain no-repeat;
+    border: 15px solid transparent;
+} */
 
 body {
     background: #000000;
@@ -18,22 +27,22 @@ body {
 }
 
 .logo {
-    width: 70px;
-    height: 70px;
+    width: 35px;
+    height: 35px;
     transition: transform 0.3s ease;
     margin-left: 100px;
 }
 
 .logo:hover {
-    animation: bounce 1.5s;
+    animation: bounce 0.7s;
 }
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
-    40% {
-        transform: translateY(-30px);
+    50% {
+        transform: translateY(-20px);
     }
     60% {
         transform: translateY(-15px);
@@ -46,7 +55,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px 0;
-    top: 0;
+    top: 10px;
     position: fixed;
     width: 100%;
 }
@@ -132,7 +141,7 @@ nav ul li a:hover {
 #contact-icon {
     position: fixed;
     display: flex;
-    right: 70px;
+    left: 50px;
     bottom: 60px;
     flex-direction: column;
     align-items: center;
