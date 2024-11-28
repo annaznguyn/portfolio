@@ -66,7 +66,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* display side by side */
+    /* display: inline-block; */
     list-style: none;
     margin: 10px 20px;
 }
@@ -100,7 +100,18 @@ nav ul li a:hover::after {
     color: rgb(130, 255, 255);
 } */
 
-.intro {
+.fade {
+    opacity: 0; /* content is invisible at the start */
+    transform: translateY(30px);
+    transition: opacity 1.7s ease, transform 1.25s ease;
+}
+
+.fade-visible {
+    opacity: 1; /* make it visible */
+    transform: translateY(0);
+}
+
+#intro {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -210,7 +221,7 @@ nav ul li a:hover::after {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.skills-list {
+#skills-list {
     margin-top: 50px;
     color: #50f6ff;
     font-size: 25px;
@@ -248,7 +259,7 @@ nav ul li a:hover::after {
 }
 
 #projects ul li {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .project-info {
@@ -261,8 +272,8 @@ nav ul li a:hover::after {
 }
 
 .project-background-pic {
-    width: 400px;
-    height: 250px;
+    width: 540px;
+    height: 350px;
 }
 
 .word-space {
