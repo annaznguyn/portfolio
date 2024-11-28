@@ -73,7 +73,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(213, 191, 162);
+    /* color: rgb(213, 191, 162); */
+    color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -95,9 +96,9 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-nav ul li a:hover {
-    color: bisque;
-}
+/* nav ul li a:hover {
+    color: rgb(130, 255, 255);
+} */
 
 .intro {
     display: flex;
@@ -108,7 +109,8 @@ nav ul li a:hover {
     height: 50%;
     width: 100%;
     text-align: left;
-    color: rgb(213, 191, 162);
+    /* color: rgb(213, 191, 162); */
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -120,22 +122,20 @@ nav ul li a:hover {
 
 .greeting {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .description {
     margin-bottom: 40px;
-    font-size: 20px;
-}
-
-.description span {
-    color: #50f6ff;
+    font-size: 30px;
 }
 
 .profile-pic {
-    width: 250px;
-    height: 300px;
-    margin-left: 200px;
+    width: 500px;
+    height: 500px;
+    margin-left: 570px;
+    border: 1px solid transparent;
+    border-radius: 50%;
 }
 
 #contact-icon {
@@ -198,47 +198,47 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-
 #skills {
     color: #50f6ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
-    justify-content: center;
+    font-size: 25px;
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 300px;
     align-items: center;
-    margin-left: 230px;
-    margin-bottom: 200px;
+    height: 100vh;
 }
 
 #skills ul li {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 35px;
 }
 
-.back {
+/* .back {
     margin-left: 12px;
-}
+} */
 
-.spec-skills {
+.specific-skills {
     font-size: 20px;
-    margin-left: 60px;
-    margin-top: 15px;
-    color: rgb(213, 191, 162);
+    /* margin-left: 60px; */
+    margin-top: 5px;
+    /* color: rgb(213, 191, 162); */
+    color: white;
 }
 
 #projects {
-    display: flex;
-    flex-direction: row;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 100px;
-    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .project-desc {
-    color: rgb(213, 191, 162);
+    /* color: rgb(213, 191, 162); */
+    color: white;
     margin-left: 50px;
 }
 
