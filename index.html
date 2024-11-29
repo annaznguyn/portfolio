@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Personal Portfolio Website</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    
 </head>
 
 <body>
@@ -17,7 +21,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id="intro" class="fade">
+        <div id="intro">
             <div class="intro-text">
                 <p class="greeting">Hello, I'm</p>
                 <h1 class="name">Anna</h1>
@@ -51,8 +55,8 @@
     </div>
 
     <div id="skills">
-        <p class="fade">Throughout my studies at the University of Sydney, combined with my personal projects, I have gained proficiency in the following:</p>
-        <div id="skills-list" class="fade">
+        <p>Throughout my studies at the University of Sydney, combined with my personal projects, I have gained proficiency in the following:</p>
+        <div id="skills-list">
             <ul>
                 <li>
                     <h3>Languages</h3>
@@ -80,36 +84,131 @@
     </div>
 
     <div id="projects">
-        <ul class="fade">
-            <li><div class="project-block">
-                <img class="project-background-pic" src="images/movie-project/home-page.png">
-                <div class="project-info">
-                    <p>S T O R Y T R E E</p>
-                    <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+        <div class="swiper-super-container">
+            <div class="swiper-container">
+                <div class="swiper-group" id="group-1">
+                    <div class="swiper-slide">
+                        <!-- <div> -->
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- <div> -->
+                        <img class="project-background-pic" src="images/messaging-project/chat-page.png">
+                        <div class="project-info">
+                            <p>M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
+                            <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="project-background-pic" src="images/portfolio-project/home.png">
+                        <div class="project-info">
+                            <p>P O R T F O L I O</p>
+                            <p class="project-desc">Portfolio Website</p>
+                        </div>
+                    </div>
+                    <a class="next-arrow" href="#group-2" aria-label="next">
+                        <img src="images/white-right-arrow.png">
+                    </a>
                 </div>
-            </div></li>
-            <li><div class="project-block">
-                <img class="project-background-pic" src="images/messaging-project/chat-page.png">
-                <div class="project-info">
-                    <p>M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
-                    <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
+
+                <div class="swiper-group" id="group-2">
+                    <a class="prev-arrow" href="#group-1" aria-label="prev">
+                        <img src="images/white-left-arrow.png">
+                    </a>
+                    <div class="swiper-slide">
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                    </div>
                 </div>
-            </div></li>
-            <li><div class="project-block">
-                <img class="project-background-pic" src="images/portfolio-project/home.png">
-                <div class="project-info">
-                    <p>P O R T F O L I O</p>
-                    <p class="project-desc">Portfolio Website</p>
-                </div>
-            </div></li>
-            <li><div class="project-block">
-                <img class="project-background-pic" src="images/movie-project/home-page.png">
-                <div class="project-info">
-                    <p>S T O R Y T R E E</p>
-                    <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
-                </div>
-            </div></li>
-        </ul>
+
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        
+    </div>
+
+    <svg>
+        <symbol id="next" viewBox="0 0 20 20">
+            <path fill="white" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+        </symbol>
+
+        <symbol id="prev" viewBox="0 0 75 75">
+            <path fill="white" d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"/>
+        </symbol>
+    </svg>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
+<!-- <div class="slideshow">
+            <ul class="fade">
+                <li>
+                    <div class="project-block project-fade">
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-block project-fade">
+                        <img class="project-background-pic" src="images/messaging-project/chat-page.png">
+                        <div class="project-info">
+                            <p>M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
+                            <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-block project-fade">
+                        <img class="project-background-pic" src="images/portfolio-project/home.png">
+                        <div class="project-info">
+                            <p>P O R T F O L I O</p>
+                            <p class="project-desc">Portfolio Website</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-block project-fade">
+                        <img class="project-background-pic" src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p>S T O R Y T R E E</p>
+                            <p class="project-desc">Create Movie Plots With Multiple Storylines</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
 
         <!-- <img class="chatroom-pic" src="images/chat-project.png">
         <div class="project-desc">
@@ -119,12 +218,3 @@
                 <li><p>Built with <span>JavaScript, Python (Flask, SQLAlchemy), HTML, CSS</span></p></li>
             </ul>
         </div> -->
-    </div>
-
-    <div id="contact">
-        
-    </div>
-
-    <script src="index.js"></script>
-</body>
-</html>

@@ -103,12 +103,16 @@ nav ul li a:hover::after {
 .fade {
     opacity: 0; /* content is invisible at the start */
     transform: translateY(30px);
-    transition: opacity 1.7s ease, transform 1.25s ease;
+    transition: opacity 1.7s ease-out, transform 1.25s ease-out;
+    visibility: hidden;
+    will-change: opacity, visibility;
 }
 
 .fade-visible {
     opacity: 1; /* make it visible */
-    transform: translateY(0);
+    /* transform: translateY(0); */
+    transform: none;
+    visibility: visible;
 }
 
 #intro {
@@ -249,18 +253,20 @@ nav ul li a:hover::after {
 #projects {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;
     height: 100vh;
-    margin-left: 100px;
+    /* margin-left: 200px; */
+    /* margin-left: 0; */
 }
 
-#projects ul {
+/* #projects ul {
     display: flex;
 }
 
 #projects ul li {
     margin-right: 30px;
-}
+} */
 
 .project-info {
     color: white;
@@ -272,10 +278,107 @@ nav ul li a:hover::after {
 }
 
 .project-background-pic {
-    width: 540px;
-    height: 350px;
+    width: 440px;
+    height: 250px;
 }
 
 .word-space {
     margin-left: 10px;
 }
+
+.swiper-super-container {
+    position: relative;
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+.swiper-container, 
+.swiper-group {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.25rem;
+}
+
+.swiper-container {
+    grid-auto-columns: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* position: relative; */
+}
+
+.swiper-container:hover :where(.next-arrow, .prev-arrow) {
+    opacity: 1;
+}
+
+:where(.next-arrow, .prev-arrow):hover {
+    background: #6b6b6b9c;
+}
+
+:where(.next-arrow, .prev-arrow) > img {
+    transition: transform 70ms linear;
+    transform: scale(1);
+}
+
+:where(.next-arrow, .prev-arrow):hover > img {
+    transform: scale(1.25);
+}
+
+.swiper-group {
+    border: 3px solid limegreen;
+    grid-auto-columns: 1fr;
+}
+
+.swiper-slide {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.next-arrow,
+.prev-arrow {
+    position: absolute;
+    z-index: 10;
+    padding: 0 1rem;
+    opacity: 0;
+}
+
+.next-arrow {
+    right: 0;
+    top: 40%;
+}
+
+.next-arrow img {
+    width: 50px;
+    height: 50px;
+}
+
+.prev-arrow {
+    left: 0;
+    top: 40%;
+}
+
+.prev-arrow img {
+    width: 75px;
+    height: 75px;
+}
+
+/* @import 'swiper/css';
+@import 'swiper/css/navigation'; */
+
+/* .swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    transform: translateY(-50%);
+} */
+
+/* .project-fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} */
