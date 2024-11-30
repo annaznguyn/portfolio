@@ -1,6 +1,3 @@
-Please watch the demo video of the website:
-1. Click on the portfolio-demo.mp4 file.
-2. Click "View raw" to download the video.
-3. Enjoy!
+Built with JavaScript, HTML and CSS. Access the website via https://annaznguyn.github.io/portfolio/.
 
-Note: The website is unfinished but it looks cool so far. Thanks for visiting!
+Hosted by GitHub Pages.
