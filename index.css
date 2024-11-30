@@ -144,7 +144,7 @@ nav ul li a:hover::after {
     font-size: 35px;
 }
 
-.profile-pic {
+#intro img {
     width: 500px;
     height: 500px;
     margin-left: 570px;
@@ -344,4 +344,130 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    #intro img {
+        width: 150px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+
+    .greeting {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 25px;
+    }
+
+    .intro-text {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        margin-right: 5px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+        transition: transform 0.3s ease;
+        margin-left: 20px;
+    }
+
+    #skills {
+        margin-left: 80px;
+        font-size: auto;
+        margin-top: auto;
+        margin-right: 10px;
+    }
+
+    #skills p {
+        font-size: auto;
+    }
+
+    #skills-list {
+        margin-top: 30px;
+        font-size: auto;
+    }
+
+    #skills ul li {
+        margin-bottom: auto;
+    }
+
+    .project-info {
+        font-size: auto;
+    }
+
+    .links {
+        margin-top: 230px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 10px;
+    }
+
+    .project-title,
+    .project-desc {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #intro img {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .intro-text {
+        margin-left: 20px;
+    }
+
+    #skills {
+        margin-left: 80px;
+        font-size: auto;
+        margin-top: auto;
+        margin-right: 10px;
+    }
+
+    #skills p {
+        font-size: auto;
+    }
+
+    #skills-list {
+        margin-top: 30px;
+        font-size: auto;
+    }
+
+    #skills ul li {
+        margin-bottom: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+    #intro img {
+        width: 400px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .intro-text {
+        margin-left: 50px;
+    }
+
+    #skills {
+        margin-left: 80px;
+        font-size: auto;
+        margin-top: auto;
+        margin-right: 30px;
+    }
 }
