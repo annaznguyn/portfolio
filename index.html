@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div id="header">
+    <header>
         <nav>
             <a href="#"><img src="images/soot-sprite-scrollbar.png" class="logo"></a>
             <ul>
@@ -22,152 +22,158 @@
             <div class="intro-text">
                 <p class="greeting">Hello, I'm</p>
                 <h1 class="name">Anna</h1>
-                <p class="description">Full-stack Developer</p>
+                <p class="description">I'm a full-stack developer</p>
             </div>
             <img src="images/cute-cat-1.jpg">
         </div>
-    </div>
+    </header>
 
-    <div id="contact-icon">
-        <ul>
-            <li><div>
-                <a href="https://github.com/annaznguyn" target="_blank">
-                    <img src="images/contacts/github-icon.png" id="github-before" style="filter: invert(100%);"> <!-- sepia(100%) to change to rgb(213, 191, 162) -->
-                    <img src="images/contacts/github-cyan-icon.png" id="github-after">
-                </a>
-            </div></li>
-            <li><div>
-                <a href="https://www.linkedin.com/in/minh-nguyen-09b038244/" target="_blank">
-                    <img src="images/contacts/linkedin-icon.png" id="linkedin-before" style="filter: invert(100%);">
-                    <img src="images/contacts/linkedin-cyan-icon.png" id="linkedin-after">
-                </a>
-            </div></li>
-            <li><div>
-                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:cec7d139-b628-4b74-9d27-979ae3ef11aa" target="_blank">
-                    <img src="images/contacts/resume-icon.png" id="resume-before" style="filter: invert(100%);">
-                    <img src="images/contacts/resume-cyan-icon.png" id="resume-after">
-                </a>
-            </div></li>
-        </ul>
-    </div>
-
-    <div id="skills">
-        <p>Throughout my studies at the University of Sydney, combined with my personal projects, I have gained proficiency in the following:</p>
-        <div id="skills-list">
-            <ul>
-                <li>
-                    <h3>Languages</h3>
-                    <p class="specific-skills">Java, Python, JavaScript, HTML, CSS, SQL, Cypher, LaTeX, R</p>
-                </li>
-                <li>
-                    <!-- <h3 class="back">Framework</h3> -->
-                    <h3>Frameworks & Libraries</h3>
-                    <p class="specific-skills">Spring Boot, Flask, React.js, JavaFX, Langchain, Pytorch, SQLAlchemy</p>
-                </li>
-                <li>
-                    <h3>Technologies</h3>
-                    <p class="specific-skills">Git, Bitbucket, Gradle, Jira, Jenkins, Docker, JaCoCo, Junit, Postman, VS Code, IntelliJ, pgAdmin</p>
-                </li>
-                <li>
-                    <h3>DBMS</h3>
-                    <p class="specific-skills">PostgreSQL, Neo4j</p>
-                </li>
-                <li>
-                    <h3>Concepts & Practices</h3>
-                    <p class="specific-skills">Agile Methodology (SCRUM, CI, CD), Testing, OOP, MVC, GraphRAG, Design patterns, AI integration</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="projects">
-        <div class="project-container">
-            <div class="project-group" id="group-1">
-                <div class="project">
-                    <img src="images/movie-project/home-page.png">
-                    <div class="project-info">
-                        <p class="project-title">S T O R Y T R E E</p>
-                        <p class="project-desc">Create Interactive Movie Plots With Multiple Storylines</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/movie-plot-generator-website" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/messaging-project/chat-page.png">
-                    <div class="project-info">
-                        <p class="project-title">M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
-                        <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/Secured-Chatroom" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/portfolio-project/home.png">
-                    <div class="project-info">
-                        <p class="project-title">P O R T F O L I O</p>
-                        <p class="project-desc">Portfolio Website</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/portfolio" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://annaznguyn.github.io/portfolio/" target="_blank">
-                                <img src="images/internet.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <div id="skills">
+            <p>Throughout my studies at the University of Sydney, combined with my personal projects, I have gained proficiency in the following:</p>
+            <div id="skills-list">
+                <ul>
+                    <li>
+                        <h3>Languages</h3>
+                        <p class="specific-skills">Java, Python, JavaScript, HTML, CSS, SQL, Cypher, LaTeX, R</p>
+                    </li>
+                    <li>
+                        <!-- <h3 class="back">Framework</h3> -->
+                        <h3>Frameworks & Libraries</h3>
+                        <p class="specific-skills">Spring Boot, Flask, React.js, JavaFX, Langchain, Pytorch, SQLAlchemy</p>
+                    </li>
+                    <li>
+                        <h3>Technologies</h3>
+                        <p class="specific-skills">Git, Bitbucket, Gradle, Jira, Jenkins, Docker, JaCoCo, Junit, Postman, VS Code, IntelliJ, pgAdmin</p>
+                    </li>
+                    <li>
+                        <h3>DBMS</h3>
+                        <p class="specific-skills">PostgreSQL, Neo4j</p>
+                    </li>
+                    <li>
+                        <h3>Concepts & Practices</h3>
+                        <p class="specific-skills">Agile Methodology (SCRUM, CI, CD), Testing, OOP, MVC, GraphRAG, Design patterns, AI integration</p>
+                    </li>
+                </ul>
             </div>
-
-            <div class="project-group" id="group-2">
-                <div class="project">
-                    <img src="images/space-invaders.png">
-                    <div class="project-info">
-                        <p class="project-title">S P A C E<span class="word-space"></span>I N V A D E R S</p>
-                        <p class="project-desc">Classic Space Invaders Game</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/space-invaders" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+        </div>
+    
+        <div id="projects">
+            <div class="project-container">
+                <div class="project-group" id="group-1">
+                    <div class="project">
+                        <img src="images/movie-project/home-page.png">
+                        <div class="project-info">
+                            <p class="project-title">S T O R Y T R E E</p>
+                            <p class="project-desc">Create Interactive Movie Plots With Multiple Storylines</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/movie-plot-generator-website" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/messaging-project/chat-page.png">
+                        <div class="project-info">
+                            <p class="project-title">M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
+                            <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/Secured-Chatroom" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/portfolio-project/home.png">
+                        <div class="project-info">
+                            <p class="project-title">P O R T F O L I O</p>
+                            <p class="project-desc">Portfolio Website</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/portfolio" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://annaznguyn.github.io/portfolio/" target="_blank">
+                                    <img src="images/internet.png">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="images/personality-test.png">
-                    <div class="project-info">
-                        <p class="project-title">P E R S O N A L I T Y<span class="word-space"></span>T E S T<span class="word-space"></span>W E B S I T E</p>
-                        <p class="project-desc">Introvert vs. Extrovert: Discover Your Personality Type</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/personality-test-website" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+    
+                <div class="project-group" id="group-2">
+                    <div class="project">
+                        <img src="images/space-invaders.png">
+                        <div class="project-info">
+                            <p class="project-title">S P A C E<span class="word-space"></span>I N V A D E R S</p>
+                            <p class="project-desc">Classic Space Invaders Game</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/space-invaders" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project">
-                    <img src="images/chess.png">
-                    <div class="project-info">
-                        <p class="project-title">C H E S S<span class="word-space"></span>G A M E</p>
-                        <p class="project-desc">Classic Chess Game With A Bot</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/Chess" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                    <div class="project">
+                        <img src="images/personality-test.png">
+                        <div class="project-info">
+                            <p class="project-title">P E R S O N A L I T Y<span class="word-space"></span>T E S T<span class="word-space"></span>W E B S I T E</p>
+                            <p class="project-desc">Introvert vs. Extrovert: Discover Your Personality Type</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/personality-test-website" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/chess.png">
+                        <div class="project-info">
+                            <p class="project-title">C H E S S<span class="word-space"></span>G A M E</p>
+                            <p class="project-desc">Classic Chess Game With A Bot</p>
+                            <div class="links">
+                                <a href="https://github.com/annaznguyn/Chess" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
+        <div id="contact">
+            <p class="getintouch">Get in touch</p>
+            <h2>Contact Me</h2>
+            <p class="getintouch">annanguyn99@gmail.com</p>
+            <div id="contact-icon">
+                <div>
+                    <a href="https://github.com/annaznguyn" target="_blank">
+                        <img src="images/contacts/github-icon.png" id="github-before" style="filter: invert(100%);"> <!-- sepia(100%) to change to rgb(213, 191, 162) -->
+                        <img src="images/contacts/github-cyan-icon.png" id="github-after">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/minh-nguyen-09b038244/" target="_blank">
+                        <img src="images/contacts/linkedin-icon.png" id="linkedin-before" style="filter: invert(100%);">
+                        <img src="images/contacts/linkedin-cyan-icon.png" id="linkedin-after">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:cec7d139-b628-4b74-9d27-979ae3ef11aa" target="_blank">
+                        <img src="images/contacts/resume-icon.png" id="resume-before" style="filter: invert(100%);">
+                        <img src="images/contacts/resume-cyan-icon.png" id="resume-after">
+                    </a>
+                </div>
+            </div>
+            <p class="credit">&copy; 2024 Anna Nguyen. All rights reserved.</p>
+        </div>
+    </main>
 
-    <div id="contact">
+    <footer>
         
-    </div>
+    </footer>
 
     <script type="module" src="index.js"></script>
 </body>

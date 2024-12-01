@@ -16,12 +16,3 @@ const sections = document.querySelectorAll(".fade");
 sections.forEach(s => {
     observer.observe(s);
 });
-
-// indicate the current section by keeping the line under that section in the nav bar
-// function keepUnderline(id) {
-//     const allLinks = document.querySelectorAll("nav ul li a");
-//     allLinks.forEach(link => link.classList.remove("active"));
-
-//     const current = document.getElementById(id);
-//     current.classList.add("active");
-// }
