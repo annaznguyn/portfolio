@@ -145,7 +145,7 @@ nav ul li a:hover::after {
 }
 
 #intro img {
-    width: 500px;
+    width: 400px;
     height: 500px;
     margin-left: 570px;
     border: 1px solid transparent;
@@ -374,9 +374,9 @@ nav ul li a:hover::after {
 @media only screen and (max-width: 800px) {
     #intro img {
         width: 150px;
-        height: 150px;
+        height: 200px;
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     #contact h2 {
@@ -450,14 +450,14 @@ nav ul li a:hover::after {
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
     #intro img {
-        width: 300px;
+        width: 250px;
         height: 300px;
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 60px;
     }
 
     .intro-text {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     #skills {
@@ -484,10 +484,10 @@ nav ul li a:hover::after {
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
     #intro img {
-        width: 400px;
+        width: 340px;
         height: 400px;
         margin-left: auto;
-        margin-right: 30px;
+        margin-right: 60px;
     }
 
     .intro-text {
