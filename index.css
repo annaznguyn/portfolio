@@ -136,20 +136,25 @@ nav ul li a:hover::after {
 
 .greeting {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .description {
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 30px;
+    width: 700px;
+}
+
+.desc-highlight {
+    color: #50f6ff;
 }
 
 #intro img {
     width: 400px;
-    height: 500px;
-    margin-left: 570px;
+    height: 510px;
+    margin-left: 400px;
     border: 1px solid transparent;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 #contact {
@@ -250,7 +255,7 @@ nav ul li a:hover::after {
 }
 
 #skills-list {
-    margin-top: 50px;
+    margin-top: 30px;
     color: #50f6ff;
     font-size: 25px;
 }
@@ -259,7 +264,7 @@ nav ul li a:hover::after {
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .specific-skills {
@@ -387,13 +392,13 @@ nav ul li a:hover::after {
         font-size: 40px;
     }
 
-
     .greeting {
         font-size: 20px;
     }
 
     .description {
-        font-size: 25px;
+        font-size: 20px;
+        width: 300px;
     }
 
     .intro-text {
@@ -413,22 +418,26 @@ nav ul li a:hover::after {
 
     #skills {
         margin-left: 80px;
-        font-size: auto;
+        font-size: 20px;
         margin-top: auto;
         margin-right: 10px;
     }
 
     #skills p {
-        font-size: auto;
+        font-size: 19px;
     }
 
     #skills-list {
-        margin-top: 30px;
+        margin-top: 20px;
         font-size: auto;
     }
 
     #skills ul li {
         margin-bottom: auto;
+    }
+
+    #skills ul li h3 {
+        font-size: 20px;
     }
 
     .project-info {
@@ -457,7 +466,20 @@ nav ul li a:hover::after {
     }
 
     .intro-text {
-        margin-left: 50px;
+        margin-left: 20px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .greeting {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 25px;
+        width: 500px;
     }
 
     #skills {
@@ -482,7 +504,7 @@ nav ul li a:hover::after {
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
     #intro img {
         width: 340px;
         height: 400px;
@@ -494,10 +516,63 @@ nav ul li a:hover::after {
         margin-left: 50px;
     }
 
+    .name {
+        font-size: 60px;
+    }
+
+    .description {
+        font-size: 25px;
+        width: 500px;
+    }
+
     #skills {
         margin-left: 80px;
         font-size: auto;
         margin-top: auto;
         margin-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1500px) {
+    #intro img {
+        width: 340px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+
+    .intro-text {
+        margin-left: 50px;
+    }
+
+    .name {
+        font-size: 70px;
+    }
+
+    .description {
+        font-size: 30px;
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1700px) {
+    #intro img {
+        width: 390px;
+        height: 450px;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+
+    .intro-text {
+        margin-left: 100px;
+    }
+
+    .name {
+        font-size: 80px;
+    }
+
+    .description {
+        font-size: 30px;
+        width: 700px;
     }
 }
