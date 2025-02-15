@@ -17,3 +17,15 @@
 //     observer.observe(s);
 // });
 
+var logo1 = document.getElementById("logo1");
+var logo2 = document.getElementById("logo2");
+
+logo1.addEventListener("mouseover", () => {
+    logo2.style.display = "block";
+    logo1.style.display = "none";
+});
+
+logo1.addEventListener("mouseleave", () => {
+    logo2.style.display = "none";
+    logo1.style.display = "block";
+});

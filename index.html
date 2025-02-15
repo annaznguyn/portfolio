@@ -10,7 +10,10 @@
 <body>
     <header>
         <nav>
-            <a href="#"><img src="images/soot-sprite-scrollbar.png" class="logo"></a>
+            <a href="#">
+                <img src="images/logo/pop-cat.png" id="logo1">
+                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;">
+            </a>
             <ul>
                 <li><a id="home" href="#">Home</a></li>
                 <li><a id="my-skills" href="#skills">What I can do</a></li>
@@ -18,14 +21,19 @@
                 <li><a id="my-contact" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id="intro">
-            <div class="intro-text">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="name">Anna</h1>
-                <p class="description">I'm a full-stack engineer based in Sydney.</p>
-                <p class="description">I'm known for my commitment to creating practical and impactful solutions, as well as my passion for technology. Through my studies and personal projects, I have developed strong foundation and gained experience in building <span class="desc-highlight">efficient backend systems</span> and <span class="desc-highlight">intuitive user interfaces</span>. I'm always eager to solve new challenges and seek opportunities to learn from others.</p>
+        <div class="intro-container">
+            <!-- <img class="desktop-img" src="images/desktop.jpg"> -->
+            <video class="study-vid" autoplay loop muted>
+                <!-- video by Rajni Tamta on Pinterest -->
+                <source  src="./images/studying-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="intro-brief">
+                <p>Hi,</p>
+                <p>I'm Anna Nguyen</p>
+                <p class="intro-brief-job">A full-stack developer looking to build<br>functional, robust and seamless websites.</p>
+                <p class="intro-brief-job">Solving problems and attention to details<br>are my strength.</p>
             </div>
-            <img src="images/avatar.jpg">
         </div>
     </header>
 
@@ -74,7 +82,7 @@
             <div class="project-container">
                 <div class="project-group" id="group-1">
                     <div class="project">
-                        <img src="images/movie-project/home-page.png">
+                        <img src="images/projects/movie-project/home-page.png">
                         <div class="project-info">
                             <p class="project-title">S T O R Y T R E E</p>
                             <p class="project-desc">Create Interactive Movie Plots With Multiple Storylines</p>
@@ -86,7 +94,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="images/messaging-project/chat-page.png">
+                        <img src="images/projects/messaging-project/chat-page.png">
                         <div class="project-info">
                             <p class="project-title">M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
                             <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
@@ -98,7 +106,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="images/portfolio-project/home.png">
+                        <img src="images/projects/portfolio-project/home.png">
                         <div class="project-info">
                             <p class="project-title">P O R T F O L I O</p>
                             <p class="project-desc">Portfolio Website</p>
@@ -116,7 +124,7 @@
     
                 <div class="project-group" id="group-2">
                     <div class="project">
-                        <img src="images/space-invaders.png">
+                        <img src="images/projects/space-invaders.png">
                         <div class="project-info">
                             <p class="project-title">S P A C E<span class="word-space"></span>I N V A D E R S</p>
                             <p class="project-desc">Classic Space Invaders Game</p>
@@ -128,7 +136,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="images/personality-test.png">
+                        <img src="images/projects/personality-test.png">
                         <div class="project-info">
                             <p class="project-title">P E R S O N A L I T Y<span class="word-space"></span>T E S T<span class="word-space"></span>W E B S I T E</p>
                             <p class="project-desc">Introvert vs. Extrovert: Discover Your Personality Type</p>
@@ -140,7 +148,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="images/chess.png">
+                        <img src="images/projects/chess.png">
                         <div class="project-info">
                             <p class="project-title">C H E S S<span class="word-space"></span>G A M E</p>
                             <p class="project-desc">Classic Chess Game With A Bot</p>
