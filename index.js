@@ -17,6 +17,14 @@
 //     observer.observe(s);
 // });
 
+function copyLink() {
+    var link = "annanguyn99@gmail.com";
+    navigator.clipboard.writeText(link);
+
+    document.getElementById("copy-icon").style.display = "none";
+    document.getElementById("tick-icon").style.display = "block";
+}
+
 var logo1 = document.getElementById("logo1");
 var logo2 = document.getElementById("logo2");
 
