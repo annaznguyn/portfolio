@@ -1,21 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
-    scroll-behavior: smooth; /* smoothly move to other section when clicking on them in the nav bar */
+    scroll-behavior: smooth;
 }
-
-/* html::-webkit-scrollbar {
-    width: 70px;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: url('images/soot-sprite-scrollbar2.png') center/contain no-repeat;
-    border: 15px solid transparent;
-} */
 
 body {
     background: white;
@@ -29,7 +20,7 @@ header {
 #logo1 {
     width: 50px;
     height: 50px;
-    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease;
     margin-left: 100px;
 }
 
@@ -61,7 +52,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px 0;
-    top: 0px;
+    top: 0;
     position: fixed;
     width: 100%;
     background-color: rgb(128, 64, 27);
@@ -70,17 +61,21 @@ nav {
 
 nav ul {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-right: 100px;
 }
 
-nav ul li {
+nav li {
     list-style: none;
     margin: 10px 20px;
+    /* height: 45px; */
 }
 
 nav ul li a {
+    height: 100%;
+    /* padding: 0 30px; */
     text-decoration: none;
-    /* color: rgb(213, 191, 162); */
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,22 +84,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(224, 170, 125);
+    color: rgb(240, 181, 133);
 }
 
-/* nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #50f6ff;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
+/* .mini-menu {
+    position: fixed;   
+    top: 0;
+    right: 0;
+    padding: 10px 0;
 } */
 
 .fade {
@@ -277,6 +264,7 @@ nav ul li a:hover::after {
     align-items: center;  */
     min-height: 100vh;
     height: auto;
+    padding-top: 100px;
 }
 
 .project-container {
@@ -301,7 +289,7 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
     /* flex: 1 1 calc(33.33% - 20px); */
-    max-width: 440px;
+    /* max-width: 440px; */
     /* width: minmax(440px, 1fr); */
     height: 300px;
     /* border: 1px solid green; */
@@ -319,7 +307,7 @@ nav ul li a:hover::after {
 
 .featured-projects-title {
     font-size: 60px;
-    margin-top: 100px;
+    /* margin-top: 200px; */
     margin-bottom: 30px;
     /* margin-left: 255px; */
     color: #4b4b4b;
@@ -418,27 +406,49 @@ nav ul li a:hover::after {
     margin-bottom: 60px;
 } */
 
+/* SKILLS */
+
 #skills {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+    min-height: 100vh;
+    height: auto;
+    /* align-items: center; */
+    padding-top: 100px;
 }
 
 .skills-container {
     /* justify-content: center; */
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     margin-top: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #4b4b4b;
     font-size: 18px;
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    gap: 40px;
+    /* column-gap: 0px; */
+    justify-content: center;
+    place-items: center;
+    max-width: 1400px;
+    margin: 40px auto;
+    position: relative;
 }
 
-.skills-group {
+.skill {
+    position: relative;
+    overflow: hidden;
+    width: 340px;
+    height: 260px;
+    /* border: 1px solid green; */
+}
+
+/* .skills-group {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .skills-title {
     font-weight: 600;
@@ -452,7 +462,7 @@ nav ul li a:hover::after {
     margin-bottom: 5px;
 }
 
-#skills-group-2,
+/* #skills-group-2,
 #skills-group-3,
 #skills-group-4 {
     margin-left: 70px;
@@ -472,7 +482,7 @@ nav ul li a:hover::after {
 
 #skills-group-4-1 {
     margin-top: 67px;
-}
+} */
 
 /* Mobile */
 @media only screen and (min-width: 480px) and (max-width: 650px) {
@@ -504,6 +514,46 @@ nav ul li a:hover::after {
 
     .featured-projects-title {
         font-size: 40px;
+    }
+
+    /* SKILLS */
+
+    .skills-container {
+        font-size: 15px;
+        grid-template-columns: repeat(2, minmax(60px, 1fr));
+        gap: 40px;
+    }
+    
+    .skill {
+        width: 195px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
+    .skills-title {
+        font-size: 17px;
+    }
+
+    /* CONTACT */
+    #contact h2 {
+        font-size: 60px;
+    }
+
+    .contact-email p {
+        font-size: 23px;
+    }
+
+    #contact-icon {
+        grid-gap: 40px;
+    }
+    
+    #contact-icon img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .credit {
+        font-size: 17px;
     }
 }
 
@@ -542,38 +592,34 @@ nav ul li a:hover::after {
     /* SKILLS */
 
     .skills-container {
-        font-size: 15px;
+        font-size: 17px;
+        grid-template-columns: repeat(2, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
     }
-
+    
+    .skill {
+        width: 230px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
     .skills-title {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    #skills-group-2,
-    #skills-group-3,
-    #skills-group-4 {
-        margin-left: 30px;
-    }
-    
-    #skills-group-1-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-2-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-3-1 {
-        margin-top: 98px;
-    }
-    
-    #skills-group-4-1 {
-        margin-top: 52px;
+        font-size: 20px;
     }
 
-    .specific-skills {
-        width: 150px;
+    /* CONTACT */
+    #contact h2 {
+        font-size: 80px;
+    }
+
+    #contact-icon {
+        grid-gap: 50px;
+    }
+    
+    #contact-icon img {
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -613,37 +659,33 @@ nav ul li a:hover::after {
 
     .skills-container {
         font-size: 15px;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
     }
-
+    
+    .skill {
+        width: 230px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
     .skills-title {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    #skills-group-2,
-    #skills-group-3,
-    #skills-group-4 {
-        margin-left: 30px;
-    }
-    
-    #skills-group-1-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-2-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-3-1 {
-        margin-top: 98px;
-    }
-    
-    #skills-group-4-1 {
-        margin-top: 52px;
+        font-size: 17px;
     }
 
-    .specific-skills {
-        width: 150px;
+    /* CONTACT */
+    #contact h2 {
+        font-size: 100px;
+    }
+
+    #contact-icon {
+        grid-gap: 50px;
+    }
+    
+    #contact-icon img {
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -679,41 +721,40 @@ nav ul li a:hover::after {
 
     .skills-container {
         font-size: 15px;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
     }
-
+    
+    .skill {
+        width: 230px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
     .skills-title {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    #skills-group-2,
-    #skills-group-3,
-    #skills-group-4 {
-        margin-left: 30px;
-    }
-    
-    #skills-group-1-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-2-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-3-1 {
-        margin-top: 98px;
-    }
-    
-    #skills-group-4-1 {
-        margin-top: 52px;
+        font-size: 17px;
     }
 
-    .specific-skills {
-        width: 150px;
+    /* CONTACT */
+    #contact h2 {
+        font-size: 100px;
     }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    #logo1 {
+        width: 50px;
+        height: 50px;
+        margin-left: 60px;
+    }
+    
+    #logo2 {
+        width: 50px;
+        height: 50px;
+        margin-left: 60px;
+    }
+
     .intro-brief {
         margin-right: 400px;
         margin-left: 100px;
@@ -742,40 +783,22 @@ nav ul li a:hover::after {
     }
 
     /* SKILLS */
-
+    
     .skills-container {
         font-size: 15px;
+        grid-template-columns: repeat(3, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
     }
-
+    
+    .skill {
+        width: 230px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
     .skills-title {
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    
-    #skills-group-2,
-    #skills-group-3,
-    #skills-group-4 {
-        margin-left: 30px;
-    }
-    
-    #skills-group-1-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-2-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-3-1 {
-        margin-top: 98px;
-    }
-    
-    #skills-group-4-1 {
-        margin-top: 52px;
-    }
-
-    .specific-skills {
-        width: 150px;
+        font-size: 17px;
     }
 }
 
@@ -806,6 +829,25 @@ nav ul li a:hover::after {
     .project {
         margin-top: 10px;
     }
+
+    /* SKILLS */
+    
+    .skills-container {
+        font-size: 15px;
+        grid-template-columns: repeat(4, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
+    }
+    
+    .skill {
+        width: 230px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
+    .skills-title {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (min-width: 1350px) and (max-width: 1500px) {
@@ -834,40 +876,22 @@ nav ul li a:hover::after {
 
     /* SKILLS */
     
-    /* .skills-container {
-        font-size: 17px;
+    .skills-container {
+        font-size: 15px;
+        grid-template-columns: repeat(4, minmax(60px, 1fr));
+        gap: 40px;
+        max-width: 1400px;
     }
-
+    
+    .skill {
+        width: 270px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
     .skills-title {
-        margin-bottom: 20px;
         font-size: 20px;
     }
-    
-    #skills-group-2,
-    #skills-group-3,
-    #skills-group-4 {
-        margin-left: 30px;
-    }
-    
-    #skills-group-1-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-2-1 {
-        margin-top: 100px;
-    }
-    
-    #skills-group-3-1 {
-        margin-top: 98px;
-    }
-    
-    #skills-group-4-1 {
-        margin-top: 49px;
-    }
-
-    .specific-skills {
-        width: 150px;
-    } */
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 1700px) {
