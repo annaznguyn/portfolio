@@ -25,6 +25,7 @@ function copyLink() {
     document.getElementById("tick-icon").style.display = "block";
 }
 
+// pop cat
 var logo1 = document.getElementById("logo1");
 var logo2 = document.getElementById("logo2");
 
