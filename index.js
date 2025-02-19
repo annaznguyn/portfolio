@@ -25,6 +25,23 @@ function copyLink() {
     document.getElementById("tick-icon").style.display = "block";
 }
 
+function toggleMenu() {
+    var menu = document.getElementById("burger-menu");
+    var menuIcon = document.getElementById("menu-icon");
+    var closeIcon = document.getElementById("close-icon");
+
+    if (menu.style.display == "none") {
+        menu.style.display = "flex";
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+        console.log("display");
+    } else {
+        menu.style.display = "none";
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    }
+}
+
 // pop cat
 var logo1 = document.getElementById("logo1");
 var logo2 = document.getElementById("logo2");
