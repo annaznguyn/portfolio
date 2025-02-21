@@ -35,45 +35,28 @@
                 </ul>
             </div>
         </nav>
-            <!-- <a href="#">
-                <img src="images/logo/pop-cat.png" id="logo1">
-                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;">
-            </a>
-            <ul>
-                <li><a id="home" href="#">Home</a></li>
-                <li><a id="my-projects" href="#projects">Projects</a></li>
-                <li><a id="my-skills" href="#skills">Skills</a></li>
-                <li><a id="my-contact" href="#contact">Contact</a></li>
-            </ul> -->
-            <!-- <ul class="mini-menu">
-                <li><a id="home" href="#">Home</a></li>
-                <li><a id="my-projects" href="#projects">Projects</a></li>
-                <li><a id="my-skills" href="#skills">Skills</a></li>
-                <li><a id="my-contact" href="#contact">Contact</a></li>
-            </ul> -->
         <div class="intro-container">
-            <!-- <img class="desktop-img" src="images/desktop.jpg"> -->
             <video class="study-vid" autoplay loop muted>
                 <!-- video by Rajni Tamta on Pinterest -->
                 <source  src="./images/studying-bg.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="intro-brief">
-                <p class="intro-greeting">Hi,</p>
-                <p class="intro-greeting">I'm Anna Nguyen</p>
-                <p class="intro-brief-job">A full-stack developer looking to build<br>functional, robust and seamless websites.</p>
-                <p class="intro-brief-job">Solving problems and attention to details<br>are my strengths.</p>
+                <p class="intro-greeting intro-animation hidden">Hi,</p>
+                <p class="intro-greeting intro-animation hidden">I'm Anna Nguyen</p>
+                <p class="intro-brief-job intro-animation hidden-horizontal">A full-stack developer looking to build functional, robust and seamless websites.</p>
+                <p class="intro-brief-job intro-animation hidden-horizontal">Solving problems and attention to details are my strengths.</p>
             </div>
         </div>
     </header>
 
     <main>
         <div id="projects">
-            <p class="featured-projects-title">Featured Projects</p>
+            <p class="featured-projects-title project-animation hidden">Featured Projects</p>
             <div class="project-container">
                 <!-- <div>
                     <div class="project-group" id="project-group-1"> -->
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/movie-project/home-page.png">
                     <div class="project-info">
                         <p class="project-title">S T O R Y T R E E</p>
@@ -85,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/messaging-project/chat-page.png">
                     <div class="project-info">
                         <p class="project-title">M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
@@ -97,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/portfolio-project/home-1.png">
                     <div class="project-info">
                         <p class="project-title">P O R T F O L I O</p>
@@ -115,7 +98,7 @@
                     <!-- </div> -->
         
                     <!-- <div class="project-group" id="project-group-2"> -->
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/space-invaders.png">
                     <div class="project-info">
                         <p class="project-title">S P A C E<span class="word-space"></span>I N V A D E R S</p>
@@ -127,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/personality-test.png">
                     <div class="project-info">
                         <p class="project-title">P E R S O N A L I T Y<span class="word-space"></span>T E S T<span class="word-space"></span>W E B S I T E</p>
@@ -139,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project project-animation hidden">
                     <img src="images/projects/chess.png">
                     <div class="project-info">
                         <p class="project-title">C H E S S<span class="word-space"></span>G A M E</p>
@@ -157,98 +140,90 @@
         </div>
 
         <div id="skills">
-            <p class="featured-projects-title">Skills</p>
+            <p class="featured-projects-title hidden">Skills</p>
             <div class="skills-container">
-                <!-- <div class="skills-group" id="skills-group-1"> -->
                 <div class="skill">
-                    <p class="skills-title">BACKEND</p>
+                    <p class="skills-title hidden">BACKEND</p>
                     <div class="specific-skills">
-                        <p>Spring Boot</p>
-                        <p>Flask</p>
-                        <p>Node.js</p>
-                        <p>Express.js</p>
+                        <p class="specific-skills-animation1 hidden-horizontal">Spring Boot</p>
+                        <p class="specific-skills-animation1 hidden-horizontal">Flask</p>
+                        <p class="specific-skills-animation1 hidden-horizontal">Node.js</p>
+                        <p class="specific-skills-animation1 hidden-horizontal">Express.js</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <p class="skills-title">CONCEPTS & PRACTICES</p>
+                    <p class="skills-title hidden">CONCEPTS & PRACTICES</p>
                     <div class="specific-skills">
-                        <p>OOP</p>
-                        <p>MVC</p>
-                        <p>Containers</p>
-                        <p>GraphRAG</p>
-                        <p>AI integration</p>
-                        <p>Design patterns</p>
-                        <p>Agile Methodology (SCRUM, CI, CD)</p>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <!-- <div class="skills-group" id="skills-group-2"> -->
-                <div class="skill">
-                    <p class="skills-title">FRONTEND</p>
-                    <div class="specific-skills">
-                        <p>React.js</p>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaFX</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">OOP</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">MVC</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">Containers</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">GraphRAG</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">AI integration</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">Design patterns</p>
+                        <p class="specific-skills-animation2 hidden-horizontal">Agile Methodology (SCRUM, CI, CD)</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <p class="skills-title">TESTING</p>
+                    <p class="skills-title hidden">FRONTEND</p>
                     <div class="specific-skills">
-                        <p>Unit Testing</p>
-                        <p>Integration Testing</p>
-                        <p>JaCoCo</p>
-                        <p>Junit</p>
-                        <p>Postman</p>
-                        <p>Fuzzing</p>
-                        <p>TDD</p>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <!-- <div class="skills-group" id="skills-group-3"> -->
-                <div class="skill">
-                    <p class="skills-title">CI/CD</p>
-                    <div class="specific-skills">
-                        <p>Git</p>
-                        <p>Bitbucket</p>
-                        <p>Gradle</p>
-                        <p>Jenkins</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">React.js</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">HTML</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">CSS</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">JavaFX</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <p class="skills-title">PROJECT MANAGEMENT</p>
+                    <p class="skills-title hidden">TESTING</p>
                     <div class="specific-skills">
-                        <p>Jira</p>
-                        <p>Confluence</p>
-                        <p>Trello</p>
-                    </div>
-                </div>
-                <!-- </div> -->
-                <!-- <div class="skills-group" id="skills-group-4"> -->
-                <div class="skill">
-                    <p class="skills-title">DBMS & QUERY LANGUAGES</p>
-                    <div class="specific-skills">
-                        <p>PostgreSQL (pgAdmin)</p>
-                        <p>Neo4j</p>
-                        <p>Supabase</p>
-                        <p>SQL</p>
-                        <p>Cypher</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">Unit Testing</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">Integration Testing</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">JaCoCo</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">Junit</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">Postman</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">Fuzzing</p>
+                        <p class="specific-skills-animation4 hidden-horizontal">TDD</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <p class="skills-title">OTHERS</p>
+                    <p class="skills-title hidden">CI/CD</p>
                     <div class="specific-skills">
-                        <p>Deep Learning (Pytorch, Google Colab)</p>
-                        <p>Building LLM Applications (Langchain, Ragas)</p>
+                        <p class="specific-skills-animation5 hidden-horizontal">Git</p>
+                        <p class="specific-skills-animation5 hidden-horizontal">Bitbucket</p>
+                        <p class="specific-skills-animation5 hidden-horizontal">Gradle</p>
+                        <p class="specific-skills-animation5 hidden-horizontal">Jenkins</p>
                     </div>
                 </div>
-                <!-- </div> -->
+                <div class="skill">
+                    <p class="skills-title hidden">PROJECT MANAGEMENT</p>
+                    <div class="specific-skills">
+                        <p class="specific-skills-animation6 hidden-horizontal">Jira</p>
+                        <p class="specific-skills-animation6 hidden-horizontal">Confluence</p>
+                        <p class="specific-skills-animation6 hidden-horizontal">Trello</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skills-title hidden">DBMS & QUERY LANGUAGES</p>
+                    <div class="specific-skills">
+                        <p class="specific-skills-animation7 hidden-horizontal">PostgreSQL (pgAdmin)</p>
+                        <p class="specific-skills-animation7 hidden-horizontal">Neo4j</p>
+                        <p class="specific-skills-animation7 hidden-horizontal">Supabase</p>
+                        <p class="specific-skills-animation7 hidden-horizontal">SQL</p>
+                        <p class="specific-skills-animation7 hidden-horizontal">Cypher</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p class="skills-title hidden">OTHERS</p>
+                    <div class="specific-skills">
+                        <p class="specific-skills-animation8 hidden-horizontal">Deep Learning (Pytorch, Google Colab)</p>
+                        <p class="specific-skills-animation8 hidden-horizontal">Building LLM Applications (Langchain, Ragas)</p>
+                    </div>
+                </div>
             </div>
         </div>
     
         <div id="contact">
-            <h2>Let's connect!</h2>
-            <div class="contact-email">
+            <h2 class="hidden">Let's connect!</h2>
+            <div class="contact-email email-animation hidden">
                 <p>annanguyn99@gmail.com</p>
                 <button onclick="copyLink()">
                     <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4b4b4b" class="bi bi-copy" viewBox="0 0 16 16">
@@ -258,19 +233,19 @@
                 </button>
             </div>
             <div id="contact-icon">
-                <div>
+                <div class="contact-animation hidden-horizontal">
                     <a href="https://github.com/annaznguyn" target="_blank">
                         <img src="images/contacts/olive-github.png" id="github-before">
                         <img src="images/contacts/light-olive-github.png" id="github-after">
                     </a>
                 </div>
-                <div>
+                <div class="contact-animation hidden-horizontal">
                     <a href="https://www.linkedin.com/in/minh-nguyen-09b038244/" target="_blank">
                         <img src="images/contacts/olive-linkedin.png" id="linkedin-before">
                         <img src="images/contacts/light-olive-linkedin.png" id="linkedin-after">
                     </a>
                 </div>
-                <div>
+                <div class="contact-animation hidden-horizontal">
                     <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:923de0b0-7341-4984-a9b5-ef964e302f59" target="_blank">
                         <img src="images/contacts/olive-resume.png" id="resume-before">
                         <img src="images/contacts/light-olive-resume.png" id="resume-after">
