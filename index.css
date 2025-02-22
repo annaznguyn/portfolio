@@ -211,7 +211,8 @@ nav ul li a:hover {
 .specific-skills-animation4:nth-child(3),
 .specific-skills-animation5:nth-child(3),
 .specific-skills-animation6:nth-child(3),
-.specific-skills-animation7:nth-child(3) {
+.specific-skills-animation7:nth-child(3),
+.specific-skills-animation8:nth-child(3) {
     transition-delay: 400ms;
 }
 
@@ -220,11 +221,13 @@ nav ul li a:hover {
 .specific-skills-animation3:nth-child(4),
 .specific-skills-animation4:nth-child(4),
 .specific-skills-animation5:nth-child(4),
-.specific-skills-animation7:nth-child(4) {
+.specific-skills-animation7:nth-child(4)
+.specific-skills-animation8:nth-child(4) {
     transition-delay: 600ms;
 }
 
 .specific-skills-animation2:nth-child(5),
+.specific-skills-animation3:nth-child(5),
 .specific-skills-animation4:nth-child(5),
 .specific-skills-animation7:nth-child(5) {
     transition-delay: 800ms;
@@ -235,7 +238,6 @@ nav ul li a:hover {
     transition-delay: 1000ms;
 }
 
-.specific-skills-animation2:nth-child(7),
 .specific-skills-animation4:nth-child(7) {
     transition-delay: 1200ms;
 }
