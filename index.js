@@ -37,7 +37,7 @@ logo1.addEventListener("mouseleave", () => {
     logo1.style.display = "block";
 });
 
-// vertical, downwards scroll animation
+// vertical scroll animation
 const hiddenElements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {
@@ -66,3 +66,30 @@ const horizontalObserver = new IntersectionObserver((entries) => {
 });
 
 horizontalHiddenElements.forEach((e) => horizontalObserver.observe(e));
+
+// scroll between hackathon projects slides
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".slider-container").forEach((container) => {
+        const slider = container.querySelector(".slider");
+        const dots = container.querySelectorAll(".slider-nav a");
+        const slides = container.querySelectorAll(".slider img, .slider video");
+
+        dots[0].style.opacity = "1";
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", function (event) {
+                event.preventDefault();
+                
+                const slideWidth = slides[0].clientWidth;
+
+                slider.scrollTo({
+                    left: slideWidth * index,
+                    behavior: "smooth",
+                });
+
+                dots.forEach(dot => dot.style.opacity = "0.5");
+                dots[index].style.opacity = "1";
+            });
+        });
+    });
+});

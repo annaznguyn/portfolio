@@ -37,7 +37,8 @@ nav {
     top: 0;
     position: fixed;
     width: 100%;
-    background-color: rgb(128, 64, 27);
+    background-color: rgba(128, 64, 27, 0.719);
+    backdrop-filter: blur(10px);
     z-index: 20;
 }
 
@@ -87,7 +88,7 @@ nav ul li a:hover {
     top: 80px;
     right: 20px;
     width: 170px;
-    height: 190px;
+    height: 220px;
     background: rgba(128, 64, 27, 0.747);
     border: 2px solid rgba(71, 36, 15, 0.747);
     border-radius: 15px;
@@ -106,7 +107,7 @@ nav ul li a:hover {
     gap: 15px;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 801px) {
     .sidebar {
         display: none;
     }
@@ -130,8 +131,8 @@ nav ul li a:hover {
 /* Vertical Downwards */
 .hidden {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .show {
@@ -161,7 +162,7 @@ nav ul li a:hover {
 .hidden-horizontal {
     opacity: 0;
     transform: translateX(-30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .show-horizontal {
@@ -287,12 +288,13 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     background-color: #EAC891;
+    position: relative;
 }
 
 .credit {
     font-size: 20px;
     position: absolute;
-    margin-top: 830px;
+    bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -406,6 +408,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     height: 300px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
 }
 
 .featured-projects-title {
@@ -542,6 +545,168 @@ nav ul li a:hover {
     margin-bottom: 5px;
 }
 
+/* EXTRACURRICULAR */
+
+#extracur {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 100px;
+}
+
+.hackathon {
+    display: grid;
+    justify-content: center;
+}
+
+.hack-proj {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 500px;
+    max-height: 350px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-left: 23px;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img,
+.slider video {
+    width: 500px;
+    height: 350px;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #696969a9;
+}
+
+.hack-proj:nth-of-type(1) .slider-nav {
+    width: 95px;
+}
+
+.hack-proj:nth-of-type(2) .slider-nav,
+.hack-proj:nth-of-type(3) .slider-nav,
+.hack-proj:nth-of-type(4) .slider-nav {
+    width: 70px;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.hack-info {
+    margin-left: 30px;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hack-title {
+    font-size: 35px;
+    color: #4b4b4b;
+}
+
+.hack-time {
+    margin-top: 10px;
+    color: #858585;
+}
+
+.hack-desc {
+    font-size: 17px;
+    margin-top: 25px;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+}
+
+.hack-desc-text {
+    margin-bottom: 10px;
+}
+
+.hack-desc ul {
+    margin-left: 20px;
+}
+
+.hack-desc-highlight {
+    font-weight: 600;
+}
+
+.hack-proj {
+    margin-bottom: 50px;
+}
+
+.hack-proj a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.hack-links {
+    display: flex;
+    gap: 20px;
+}
+
+.hack-links a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+
+.hack-links a:hover {
+    text-decoration: underline;
+}
+
+.hack-links i {
+    margin-left: 5px;
+}
+
+/* .hack-proj a img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+} */
+
 /* Mobile */
 @media only screen and (min-width: 480px) and (max-width: 650px) {
     .intro-brief {
@@ -613,6 +778,77 @@ nav ul li a:hover {
     .credit {
         font-size: 17px;
     }
+
+    /* EXTRACURRICULAR */
+
+    .hackathon {
+        display: grid;
+        justify-content: center;
+    }
+
+    .hack-proj {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hack-proj:nth-of-type(1) {
+        width: 370px;
+        height: 790px;
+    }
+
+    .hack-proj:nth-of-type(2) {
+        width: 370px;
+        height: 670px;
+    }
+
+    .hack-proj:nth-of-type(3) {
+        width: 370px;
+        height: 690px;
+    }
+
+    .hack-proj:nth-of-type(4) {
+        width: 370px;
+        height: 580px;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        width: 300px;
+        height: 250px;
+    }
+
+    .slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider img,
+    .slider video {
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .hack-title {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .hack-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hack-links a {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 651px) and (max-width: 800px) {
@@ -678,6 +914,58 @@ nav ul li a:hover {
     #contact-icon img {
         width: 90px;
         height: 90px;
+    }
+
+    /* EXTRACURRICULAR */
+
+    .hack-proj {
+        width: 550px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hack-proj:nth-of-type(1) {
+        width: 550px;
+        height: 750px;
+    }
+
+    .hack-proj:nth-of-type(2) {
+        width: 550px;
+        height: 680px;
+    }
+
+    .hack-proj:nth-of-type(3) {
+        width: 550px;
+        height: 700px;
+    }
+
+    .hack-proj:nth-of-type(4) {
+        width: 550px;
+        height: 660px;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        width: 500px;
+        height: 350px;
+    }
+
+    .slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider img,
+    .slider video {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
     }
 }
 
@@ -756,6 +1044,62 @@ nav ul li a:hover {
         width: 90px;
         height: 90px;
     }
+
+    /* EXTRACURRICULAR */
+
+    .hack-proj {
+        width: 550px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hack-proj:nth-of-type(1) {
+        width: 550px;
+        height: 750px;
+    }
+
+    .hack-proj:nth-of-type(2) {
+        width: 550px;
+        height: 690px;
+    }
+
+    .hack-proj:nth-of-type(3) {
+        width: 550px;
+        height: 710px;
+    }
+
+    .hack-proj:nth-of-type(4) {
+        width: 550px;
+        height: 670px;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        width: 500px;
+        height: 350px;
+    }
+
+    .slider {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider img,
+    .slider video {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .hack-title {
+        margin-top: 10px;
+    }
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1000px) {
@@ -818,6 +1162,43 @@ nav ul li a:hover {
     #contact h2 {
         font-size: 100px;
     }
+
+    /* EXTRACURRICULAR */
+
+    .hack-proj {
+        width: 850px;
+        height: 350px;
+    }
+    
+    .slider img,
+    .slider video {
+        max-width: 420px;
+        max-height: 300px;
+    }
+
+    .slider-wrapper {
+        max-width: 420px;
+        max-height: 300px;
+    }
+
+    .hack-title {
+        font-size: 25px;
+    }
+    
+    .hack-time {
+        font-size: 14px;
+        margin-top: 7px;
+    }
+    
+    .hack-desc {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .hack-links a {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -875,6 +1256,29 @@ nav ul li a:hover {
     .skills-title {
         font-size: 17px;
     }
+
+    /* EXTRACURRICULAR */
+    
+    .hack-proj {
+        width: 900px;
+        height: 400px;
+    }
+    
+    .hack-title {
+        font-size: 25px;
+    }
+    
+    .hack-time {
+        margin-top: 7px;
+    }
+    
+    .hack-desc {
+        font-size: 15px;
+    }
+    
+    .hack-links a {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1350px) {
@@ -922,6 +1326,25 @@ nav ul li a:hover {
     
     .skills-title {
         font-size: 17px;
+    }
+
+    /* EXTRACURRICULAR */
+    
+    .hack-proj {
+        width: 1000px;
+        height: 400px;
+    }
+    
+    .hack-title {
+        font-size: 30px;
+    }
+    
+    .hack-desc {
+        font-size: 15px;
+    }
+    
+    .hack-links a {
+        font-size: 15px;
     }
 }
 

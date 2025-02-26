@@ -5,6 +5,9 @@
     <title>Anna Nguyen</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Great+Vibes&family=Playwrite+BE+VLG+Guides&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,6 +21,7 @@
                 <li><a id="home" href="#">Home</a></li>
                 <li><a id="my-projects" href="#projects">Projects</a></li>
                 <li><a id="my-skills" href="#skills">Skills</a></li>
+                <li><a id="my-extracur" href="#extracur">Hackathons</a></li>
                 <li><a id="my-contact" href="#contact">Contact</a></li>
             </ul>
             <div id="menu-icon" onclick="toggleMenu()">
@@ -31,6 +35,7 @@
                     <li><a id="home" href="#" onclick="toggleMenu()">Home</a></li>
                     <li><a id="my-projects" href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a id="my-skills" href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a id="my-extracur" href="#extracur" onclick="toggleMenu()">Hackathons</a></li>
                     <li><a id="my-contact" href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
@@ -51,7 +56,7 @@
     </header>
 
     <main>
-        <div id="projects">
+        <section id="projects">
             <p class="featured-projects-title project-animation hidden">Featured Projects</p>
             <div class="project-container">
                 <!-- <div>
@@ -137,9 +142,9 @@
                     <!-- </div> -->
                 <!-- </div> -->
             </div>
-        </div>
+        </section>
 
-        <div id="skills">
+        <section id="skills">
             <p class="featured-projects-title hidden">Skills</p>
             <div class="skills-container">
                 <div class="skill">
@@ -221,9 +226,142 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="extracur">
+            <div class="hackathon">
+                <p class="featured-projects-title hidden">Hackathons</p>
+                <div class="hack-proj hidden">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide1" src="./images/hackathon/standupflow/powerpoints.png">
+                                <img id="slide2" src="./images/hackathon/standupflow/demo.png">
+                                <img id="slide2" src="./images/hackathon/standupflow/demo2.png">
+                                <img id="slide2" src="./images/hackathon/standupflow/group-pic.png">
+                            </div>
+                            <div class="slider-nav">
+                                <a proj2-slide="0"></a>
+                                <a proj2-slide="1"></a>
+                                <a proj2-slide="2"></a>
+                                <a proj2-slide="3"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hack-info">
+                        <p class="hack-title">StandUpFlow at Atlassian</p>
+                        <p class="hack-time">Atlassian ForgeHACK 2025 - 42 hours</p>
+                        <div class="hack-desc">
+                            <p class="hack-desc-text">Developed a bot (Rovo Agent) using Atlassian Forge, helping users prepare for standups by summarising their issues, including completed issues, issues progress, task prioritisation and stale issues (Fig 2).</p>
+                            <p class="hack-desc-text">I utilised <span class="hack-desc-highlight">NodeJS</span>, <span class="hack-desc-highlight">Atlassian Forge API</span> and <span class="hack-desc-highlight">Jira Query Language (JQL)</span> to fetch Jira issues assigned to the current user, filter for tasks that have been in progress for over two weeks and extract key details like issue ID and summary (Fig 3).</p>
+                        </div>
+                        <div class="hack-links">
+                            <a href="https://github.com/KimberlieFu/Rosas-Flamingo/tree/main" target="_blank">
+                                Bitbucket<i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://docs.google.com/presentation/d/1BB4ld8QvIVB-GEBCArJW0g6pKCh5OqOu4DWD1FQONgA/edit?usp=sharing" target="_blank">
+                                Presentation (On Atlassian's campus)<i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hack-proj hidden">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide1" src="./images/hackathon/soulsyncs/map.png">
+                                <img id="slide2" src="./images/hackathon/soulsyncs/posts.png">
+                                <img id="slide3" src="./images/hackathon/soulsyncs/group-pic.png">
+                            </div>
+                            <div class="slider-nav">
+                                <a proj1-slide="0"></a>
+                                <a proj1-slide="1"></a>
+                                <a proj1-slide="2"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hack-info">
+                        <p class="hack-title">SoulSync at SYNCS</p>
+                        <p class="hack-time">SYNCSHACK 2024 - 24 hours</p>
+                        <div class="hack-desc">
+                            <p class="hack-desc-text">Our website allows users to share stories and feelings anonymously, offering a unique snapshot of global sentiments.</p>
+                            <p class="hack-desc-text">I utilised <span class="hack-desc-highlight">Flask</span> to create API endpoints for user authentication, data retrieval, rendering pages, reading data from a JSON file and returning it as a JSON response.</p>
+                        </div>
+                        <div class="hack-links">
+                            <a href="https://github.com/hannah-oo/SoulSync/tree/backend" target="_blank">
+                                GitHub (my branch)<i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hack-proj hidden">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <video controls>
+                                    <source src="./images/hackathon/goodhands/demo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                  </video>
+                                  <video controls>
+                                    <source src="./images/hackathon/goodhands/demo-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                  </video>
+                                <img id="slide3" src="./images/hackathon/goodhands/snacks.jpg">
+                            </div>
+                            <div class="slider-nav">
+                                <a proj1-slide="0"></a>
+                                <a proj1-slide="1"></a>
+                                <a proj1-slide="2"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hack-info">
+                        <p class="hack-title">GoodHands at SYNCS</p>
+                        <p class="hack-time">SYNCSHACK 2023 - 24 hours</p>
+                        <div class="hack-desc">
+                            <p class="hack-desc-text">Our website allows users to find the charity organisation that aligns with their values and interests, with the goal of bridging the gap between those who wish to give and those in need, fostering a powerful community of support and kindness.</p>
+                            <p class="hack-desc-text">I utilised <span class="hack-desc-highlight">HTML</span>, <span class="hack-desc-highlight">CSS</span> and <span class="hack-desc-highlight">JavaScript</span> to build the website's interface.</p>
+                        </div>
+                        <div class="hack-links">
+                            <a href="https://github.com/annaznguyn/SYNCSHACK_edawollowee_quirohyuj_deedowelloingou_nut" target="_blank">
+                                GitHub<i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hack-proj hidden">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider">
+                                <img id="slide1" src="./images/hackathon/train-schedule/homepage.png">
+                                <img id="slide2" src="./images/hackathon/train-schedule/page2.png">
+                                <img id="slide2" src="./images/hackathon/train-schedule/group-pic.png">
+                            </div>
+                            <div class="slider-nav">
+                                <a proj1-slide="0"></a>
+                                <a proj1-slide="1"></a>
+                                <a proj1-slide="2"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hack-info">
+                        <p class="hack-title">TrackCheck at SYNCS</p>
+                        <p class="hack-time">SYNCSHACK 2022 - 24 hours</p>
+                        <div class="hack-desc">
+                            <p class="hack-desc-text">Our website allows users to check for train schedule, weather and hot news.</p>
+                            <p class="hack-desc-text">I built the page based on the Figma design using <span class="hack-desc-highlight">HTML</span>, <span class="hack-desc-highlight">CSS</span> and <span class="hack-desc-highlight">JavaScript</span>.</p>
+                        </div>
+                        <div class="hack-links">
+                            <a href="https://github.com/mark-trann/SYNCSHACK" target="_blank">
+                                GitHub<i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-        <div id="contact">
+        <section id="contact">
             <h2 class="hidden">Let's connect!</h2>
             <div class="contact-email email-animation hidden">
                 <p>annanguyn99@gmail.com</p>
@@ -255,7 +393,7 @@
                 </div>
             </div>
             <p class="credit">&copy; 2024 Anna Nguyen. All rights reserved.</p>
-        </div>
+        </section>
     </main>
 
     <script>
