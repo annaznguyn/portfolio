@@ -19,9 +19,26 @@ function toggleMenu() {
         menu.style.display = "none";
         menuIcon.style.display = "block";
         closeIcon.style.display = "none";
-        console.log(menu.style.display)
     }
 }
+
+// switching between original nav items and burger menu
+window.addEventListener("resize", function () {
+    const menu = document.getElementById("burger-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const sidebar = document.getElementById("sidebar");
+
+    if (window.innerWidth > 810) {
+        menu.style.display = "none";
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "none";
+        sidebar.style.display = "flex"
+    } else {
+        sidebar.style.display = "none";
+        menuIcon.style.display = "block";
+    }
+});
 
 // pop cat
 const logo1 = document.getElementById("logo1");
