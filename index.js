@@ -22,7 +22,7 @@ function toggleMenu() {
     }
 }
 
-// switching between original nav items and burger menu
+// switching between original nav items and burger menu when resizing the screen
 window.addEventListener("resize", function () {
     const menu = document.getElementById("burger-menu");
     const menuIcon = document.getElementById("menu-icon");
