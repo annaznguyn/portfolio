@@ -8,14 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Great+Vibes&family=Playwrite+BE+VLG+Guides&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 
 <body>
     <header>
         <nav>
             <a class="logo" href="#">
-                <img src="images/logo/pop-cat.png" id="logo1">
-                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;">
+                <img src="images/logo/sphere-logo.png">
+                <!-- <img src="images/logo/pop-cat.png" id="logo1">
+                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;"> -->
             </a>
             <ul class="sidebar" id="sidebar">
                 <li><a id="home" href="#">Home</a></li>
@@ -40,17 +43,22 @@
                 </ul>
             </div>
         </nav>
-        <div class="intro-container">
-            <video class="study-vid" autoplay loop muted>
-                <!-- video by Rajni Tamta on Pinterest -->
-                <source  src="./images/studying-bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="intro-brief">
-                <p class="intro-greeting intro-animation hidden">Hi,</p>
-                <p class="intro-greeting intro-animation hidden">I'm Anna Nguyen</p>
-                <p class="intro-brief-job intro-animation hidden-horizontal">A full-stack developer looking to build functional, robust and seamless websites.</p>
-                <p class="intro-brief-job intro-animation hidden-horizontal">Solving problems and attention to details are my strengths.</p>
+        <div class="home-container">
+            <div class="intro-container">
+                <div class="ball"></div>
+                <div class="background"></div>
+                <!-- <img class="background" src="./images/backgrounds/pp-waves-2.jpg"> -->
+                <div class="home-content">
+                    <div class="intro-brief">
+                        <p class="intro-greeting intro-animation hidden">Hi, I'm <span class="name">Anna Nguyen</span></p>
+                        <p class="intro-brief-job intro-animation hidden-horizontal">I'm a full-stack developer based in Sydney.</p>
+                        <p class="intro-brief-job intro-animation hidden-horizontal">I enjoy building functional, robust and seamless websites.</p>
+                    </div>
+                    <!-- <img src="./images/avatar.jpg"> -->
+                </div>
+            </div>
+            <div class="home-explore-button">
+                <button id="explore-btn-1" onclick="location.href='#projects'">Start exploring</button>
             </div>
         </div>
     </header>
@@ -365,12 +373,12 @@
             <h2 class="hidden">Let's connect!</h2>
             <div class="contact-email email-animation hidden">
                 <p>annanguyn99@gmail.com</p>
-                <button onclick="copyLink()">
+                <!-- <button onclick="copyLink()">
                     <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4b4b4b" class="bi bi-copy" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
                     </svg>
                     <img id="tick-icon" style="display: none;" src="images/contacts/tick-icon.png">
-                </button>
+                </button> -->
             </div>
             <div id="contact-icon">
                 <div class="contact-animation hidden-horizontal">

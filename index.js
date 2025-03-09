@@ -23,7 +23,7 @@ function toggleMenu() {
 }
 
 // switching between original nav items and burger menu
-window.addEventListener("resize", function () {
+window.addEventListener("resize", function() {
     const menu = document.getElementById("burger-menu");
     const menuIcon = document.getElementById("menu-icon");
     const closeIcon = document.getElementById("close-icon");
@@ -38,20 +38,6 @@ window.addEventListener("resize", function () {
         sidebar.style.display = "none";
         menuIcon.style.display = "block";
     }
-});
-
-// pop cat
-const logo1 = document.getElementById("logo1");
-const logo2 = document.getElementById("logo2");
-
-logo1.addEventListener("mouseover", () => {
-    logo2.style.display = "block";
-    logo1.style.display = "none";
-});
-
-logo1.addEventListener("mouseleave", () => {
-    logo2.style.display = "none";
-    logo1.style.display = "block";
 });
 
 // vertical scroll animation
@@ -85,7 +71,7 @@ const horizontalObserver = new IntersectionObserver((entries) => {
 horizontalHiddenElements.forEach((e) => horizontalObserver.observe(e));
 
 // scroll between hackathon projects slides
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".slider-container").forEach((container) => {
         const slider = container.querySelector(".slider");
         const dots = container.querySelectorAll(".slider-nav a");
@@ -94,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         dots[0].style.opacity = "1";
 
         dots.forEach((dot, index) => {
-            dot.addEventListener("click", function (event) {
+            dot.addEventListener("click", function(event) {
                 event.preventDefault();
                 
                 const slideWidth = slides[0].clientWidth;
@@ -110,3 +96,73 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// stars effect
+function createStars() {
+    const starsRise = document.createElement("div");
+    // var starsLeftToRight = document.createElement("div");
+    // var starsRightToLeft = document.createElement("div");
+    const starsRiseBlurry = document.createElement("div");
+
+    starsRise.classList.add("star-rise");
+    // starsLeftToRight.classList.add("star-left-to-right");
+    // starsRightToLeft.classList.add("star-right-to-left");
+    starsRiseBlurry.classList.add("star-rise-blurry");
+
+    const starVerticalStart = Math.random() * window.innerWidth;
+    // var starsHorizontalStart = Math.random() * window.innerHeight;
+
+    starsRise.style.left = `${starVerticalStart}px`;
+    // starsLeftToRight.style.top = `${starsHorizontalStart}px`;
+    // starsRightToLeft.style.top = `${starsHorizontalStart}px`;
+    starsRiseBlurry.style.left = `${starVerticalStart}px`;
+
+    document.querySelector(".intro-container").appendChild(starsRise);
+    // document.querySelector(".intro-container").appendChild(starsLeftToRight);
+    // document.querySelector(".intro-container").appendChild(starsRightToLeft);
+    document.querySelector(".star-rise-blurry").appendChild(starsRiseBlurry);
+
+    setTimeout(() => {
+        starsRise.remove();
+        // starsLeftToRight.remove();
+        // starsRightToLeft.remove();
+        starsRiseBlurry.remove();
+        // snowBlurry.remove();
+    }, 10000);
+}
+
+// setInterval(createStars, 1000);
+
+// function moveBall(x, y, xSpeed, ySpeed, ballWall, introContainerWall) {
+//     if (ballWall.left <= introContainerWall.left || ballWall.right >= introContainerWall.right) {
+//         xSpeed *= -1
+//     }
+
+//     if (ballWall.top <= introContainerWall.top || ballWall.bottom >= introContainerWall.bottom) {
+//         ySpeed *= -1
+//     }
+
+//     x += xSpeed;
+//     y += ySpeed;
+
+//     ball.style.left = `${x}px`;
+//     ball.style.top = `${y}px`;
+
+//     requestAnimationFrame(moveBall);
+// }
+
+// ball
+// document.addEventListener("DOMContentLoaded", function() {
+//     const introContainer = document.querySelector(".intro-container");
+//     const ball = document.querySelector(".ball");
+
+//     const introContainerWall = introContainer.getBoundingClientRect();
+//     const ballWall = ball.getBoundingClientRect();
+
+//     let x = 0;
+//     let y = 0;
+//     let xSpeed = 3;
+//     let ySpeed = 3;
+
+//     moveBall(x, y, xSpeed, ySpeed, ballWall, introContainerWall);
+// });
