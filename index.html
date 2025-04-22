@@ -14,11 +14,9 @@
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <a class="logo" href="#">
                 <img src="images/logo/sphere-logo.png">
-                <!-- <img src="images/logo/pop-cat.png" id="logo1">
-                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;"> -->
             </a>
             <ul class="sidebar" id="sidebar">
                 <li><a id="home" href="#">Home</a></li>
@@ -42,29 +40,31 @@
                     <li><a id="my-contact" href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="background"></div>
-        <div class="home-container">
-            <div class="intro-container">
-                <!-- <div class="ball"></div> -->
-                <!-- <div class="background"></div> -->
-                <!-- <img class="background" src="./images/backgrounds/pp-waves-2.jpg"> -->
-                <div class="home-content">
-                    <div class="intro-brief">
-                        <p class="intro-greeting intro-animation hidden">Hi, I'm <span class="name">Anna Nguyen</span></p>
-                        <p class="intro-brief-job intro-animation hidden-horizontal">I'm a full-stack developer based in Sydney.</p>
-                        <p class="intro-brief-job intro-animation hidden-horizontal">I enjoy building functional, robust and seamless websites.</p>
-                    </div>
-                    <!-- <img src="./images/avatar.jpg"> -->
-                </div>
-            </div>
-            <div class="home-explore-button">
-                <button id="explore-btn-1" onclick="location.href='#projects'">Start exploring</button>
-            </div>
+        </nav> -->
+        <!-- <div class="background"></div> -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
         </div>
     </header>
 
     <main>
+        <section id="intro">
+            <div class="intro-container">
+                <div class="intro-brief">
+                    <p class="intro-greeting intro-animation hidden">Hi, I'm</p>
+                    <p class="intro-greeting intro-animation hidden">Anna Nguyen</p>
+                    <p class="intro-brief-job intro-animation hidden-horizontal">I'm a software engineer based in Sydney.</p>
+                    <p class="intro-brief-job intro-animation hidden-horizontal">I enjoy building functional, robust and seamless websites.</p><br>
+                </div>
+                <img src="images/avatar.jpg">
+            </div>
+            <a href="#projects">Let's explore</a>
+        </section>
+
         <section id="projects">
             <p class="featured-projects-title project-animation hidden">Featured Projects</p>
             <div class="project-container">
@@ -371,7 +371,7 @@
         </section>
     
         <section id="contact">
-            <h2 class="hidden">Let's connect!</h2>
+            <h2 class="hidden">Let's make something amazing, together!</h2>
             <div class="contact-email email-animation hidden">
                 <p>annanguyn99@gmail.com</p>
                 <!-- <button onclick="copyLink()">

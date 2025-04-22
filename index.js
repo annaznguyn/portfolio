@@ -22,6 +22,40 @@ function toggleMenu() {
     }
 }
 
+let row_images = [
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/nibble.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/pumpkin.png',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/blue-mountain.jpg',
+];
+
+const columns = [...document.querySelectorAll('.col')];
+
+columns.forEach((column, columnIndex) => {
+    for (let i = 0; i < 4; i++) {
+        let image = document.createElement('img');
+        let imageIndex = columnIndex * 4 + i;
+        image.src = row_images[imageIndex];
+        column.appendChild(image);
+    }
+});
+
 // switching between original nav items and burger menu
 window.addEventListener("resize", function() {
     const menu = document.getElementById("burger-menu");
