@@ -22,6 +22,7 @@ function toggleMenu() {
     }
 }
 
+// display images in a responsive way
 let row_images = [
     'images/landing-pics/blue-mountain.jpg',
     'images/landing-pics/blue-mountain.jpg',
@@ -55,6 +56,24 @@ columns.forEach((column, columnIndex) => {
         column.appendChild(image);
     }
 });
+
+// display the project image bigger when scrolling to it
+const projImgContainer = document.querySelectorAll(".project-img-container");
+
+const projObserver = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+        if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+            e.target.classList.add("zoom-in");
+        } else {
+            e.target.classList.remove("zoom-in");
+        }
+    });
+},
+{
+  threshold: [0, 0.5, 1.0]
+});
+
+projImgContainer.forEach((e) => projObserver.observe(e));
 
 // switching between original nav items and burger menu
 window.addEventListener("resize", function() {
