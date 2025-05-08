@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Great+Vibes&family=Playwrite+BE+VLG+Guides&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <a class="logo" href="#">
-                <img src="images/logo/pop-cat.png" id="logo1">
-                <img src="images/logo/pop-cat-open-mouth.png" id="logo2" style="display: none;">
+                <img src="images/logo/sphere-logo.png">
             </a>
             <ul class="sidebar" id="sidebar">
                 <li><a id="home" href="#">Home</a></li>
@@ -39,108 +40,153 @@
                     <li><a id="my-contact" href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="intro-container">
-            <video class="study-vid" autoplay loop muted>
-                <!-- video by Rajni Tamta on Pinterest -->
-                <source  src="./images/studying-bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="intro-brief">
-                <p class="intro-greeting intro-animation hidden">Hi,</p>
-                <p class="intro-greeting intro-animation hidden">I'm Anna Nguyen</p>
-                <p class="intro-brief-job intro-animation hidden-horizontal">A full-stack developer looking to build functional, robust and seamless websites.</p>
-                <p class="intro-brief-job intro-animation hidden-horizontal">Solving problems and attention to details are my strengths.</p>
-            </div>
+        </nav> -->
+        <!-- <div class="background"></div> -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
         </div>
     </header>
 
     <main>
+        <section id="intro">
+            <div class="intro-container">
+                <div class="intro-brief">
+                    <p class="intro-greeting intro-animation hidden">Hi, I'm</p>
+                    <p class="intro-greeting intro-animation hidden">Anna Nguyen</p>
+                    <p class="intro-brief-job intro-animation hidden-horizontal">I'm a final-year Software Engineer student, majoring in<br>Software Development at the University of Sydney.</p>
+                    <p class="intro-brief-job intro-animation hidden-horizontal">I enjoy building functional, robust and seamless websites.</p><br>
+                </div>
+                <img src="images/avatar.jpg">
+            </div>
+            <a href="#projects">Let's explore</a>
+        </section>
+
         <section id="projects">
             <p class="featured-projects-title project-animation hidden">Featured Projects</p>
             <div class="project-container">
-                <!-- <div>
-                    <div class="project-group" id="project-group-1"> -->
-                <div class="project project-animation hidden">
-                    <img src="images/projects/movie-project/home-page.png">
-                    <div class="project-info">
-                        <p class="project-title">S T O R Y T R E E</p>
-                        <p class="project-desc">Create Interactive Movie Plots With Multiple Storylines</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/movie-plot-generator-website" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/logo/sphere-logo.png">
+                        <p>USYD Policy Chatbot</p>
+                    </div>
+                    <p class="project-desc">Building a chatbot using GraphRAG to answer USYD policies-related questions.</p>
+                    <div class="project-highlights">
+                        <p>HIGHLIGHTS:</p>
+                        <ul>
+                            <li>Chatbot achieved an 88 BLEURT score.</li>
+                            <li>Implemented K-means clustering on the Neo4j graph, increasing the chatbot's response speed by approximately 30%.</li>
+                            <li>Implemented query expansion using Langchain and testing metrics for the chatbot using Ragas.</li>
+                        </ul>
+                    </div>
+                    <p class="project-keywords">Backend | GraphRAG | AI Integration | 2024 | Done with Bitbucket (private)</p>
+                    <div class="project-img-container">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <div class="slider">
+                                    <video class="project-img" controls>
+                                        <source src="./images/projects/chatbot/chatbot-v1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <img src="./images/projects/chatbot/graph.png">
+                                    <img src="./images/projects/chatbot/team.png">
+                                </div>
+                                <div class="slider-nav">
+                                    <a proj1-slide="0"></a>
+                                    <a proj1-slide="1"></a>
+                                    <a proj1-slide="2"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project project-animation hidden">
-                    <img src="images/projects/messaging-project/chat-page.png">
-                    <div class="project-info">
-                        <p class="project-title">M E S S A G I N G<span class="word-space"></span>W E B S I T E</p>
-                        <p class="project-desc">Messaging Platform & Discussion Forum For Students</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/Secured-Chatroom" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/logo/sphere-logo.png">
+                        <p>Story Tree</p>
+                    </div>
+                    <p class="project-desc">Creating interactive movie plots with multiple storylines and endings.</p>
+                    <div class="project-highlights">
+                        <p>HIGHLIGHTS:</p>
+                        <ul>
+                            <li>Utilised Spring Boot to create APIs and to handle actions related to storylines.</li>
+                            <li>Utilised JPA to perform CRUD operations on Supabase database and Postman to test API endpoints.</li>
+                        </ul>
+                    </div>
+                    <p class="project-keywords">Backend | 2024 | 
+                        <a href="https://github.com/annaznguyn/movie-plot-generator-website" target="_blank">
+                            GitHub<i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                    <div class="project-img-container proj-img-container-1">
+                        <img class="project-img proj-img-1" src="images/projects/movie-project/home-page.png">
                     </div>
                 </div>
-                <div class="project project-animation hidden">
-                    <img src="images/projects/portfolio-project/home-1.png">
-                    <div class="project-info">
-                        <p class="project-title">P O R T F O L I O</p>
-                        <p class="project-desc">Portfolio Website</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/portfolio" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://annaznguyn.github.io/portfolio/" target="_blank">
-                                <img src="images/symbols/internet.png">
-                            </a>
-                        </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/logo/sphere-logo.png">
+                        <p>Messaging Website</p>
+                    </div>
+                    <p class="project-desc">Creating a secure chatroom with Flask, JavaScript, HTML and CSS.</p>
+                    <div class="project-highlights">
+                        <p>HIGHLIGHTS:</p>
+                        <ul>
+                            <li>Implemented robust security measures.</li>
+                            <li>Created APIs to handle actions related to the chatroom and managed data using SQLAlchemy.</li>
+                            <li>Prevented Insecure Direct Object Reference (IDOR) attacks using session tokens.</li>
+                        </ul>
+                    </div>
+                    <p class="project-keywords">Backend | Security | 2024 | 
+                        <a href="https://github.com/annaznguyn/Secured-Chatroom" target="_blank">
+                            GitHub<i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                    <div class="project-img-container">
+                        <img class="project-img proj-img-2" src="images/projects/messaging-project/chat-page.png">
                     </div>
                 </div>
-                    <!-- </div> -->
-        
-                    <!-- <div class="project-group" id="project-group-2"> -->
-                <div class="project project-animation hidden">
-                    <img src="images/projects/space-invaders.png">
-                    <div class="project-info">
-                        <p class="project-title">S P A C E<span class="word-space"></span>I N V A D E R S</p>
-                        <p class="project-desc">Classic Space Invaders Game</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/space-invaders" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
+                <!-- <div class="project">
+                    <div class="project-title">
+                        <img src="images/logo/sphere-logo.png">
+                        <p>Space Invaders</p>
+                    </div>
+                    <p class="project-desc">Classic Space Invaders Game.</p>
+                    <div class="project-highlights">
+                        <p>HIGHLIGHTS:</p>
+                        <ul>
+                            <li>Used Spring Boot to create APIs to handle actions related to storylines.</li>
+                            <li>Utilised JPA to perform CRUD operations on Supabase database and Postman to test API endpoints.</li>
+                        </ul>
+                    </div>
+                    <p class="project-keywords">Backend | Design Patterns | 2023</p>
+                    <div class="project-img-container">
+                        <img class="project-img proj-img-3" src="images/projects/space-invaders.png">
+                    </div>
+                </div> -->
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/logo/sphere-logo.png">
+                        <p>Chess Game</p>
+                    </div>
+                    <p class="project-desc">Creating a classic chess game with JavaFX and OOP.</p>
+                    <div class="project-highlights">
+                        <p>HIGHLIGHTS:</p>
+                        <ul>
+                            <li>Implemented full chess logic including castling, pawn promotion and check/checkmate detection.</li>
+                            <li>Mapped mouse click events in JavaFX to specific board squares and handled user interactions through event listeners.</li>
+                        </ul>
+                    </div>
+                    <p class="project-keywords">Backend | Frontend | Game | 2023 | 
+                        <a href="https://github.com/annaznguyn/Chess" target="_blank">
+                            GitHub<i class="fas fa-external-link-alt"></i>
+                        </a>
+                    <div class="project-img-container">
+                        <img class="project-img proj-img-4" src="images/projects/chess.png">
                     </div>
                 </div>
-                <div class="project project-animation hidden">
-                    <img src="images/projects/personality-test.png">
-                    <div class="project-info">
-                        <p class="project-title">P E R S O N A L I T Y<span class="word-space"></span>T E S T<span class="word-space"></span>W E B S I T E</p>
-                        <p class="project-desc">Introvert vs. Extrovert: Discover Your Personality Type</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/personality-test-website" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project project-animation hidden">
-                    <img src="images/projects/chess.png">
-                    <div class="project-info">
-                        <p class="project-title">C H E S S<span class="word-space"></span>G A M E</p>
-                        <p class="project-desc">Classic Chess Game With A Bot</p>
-                        <div class="links">
-                            <a href="https://github.com/annaznguyn/Chess" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                    <!-- </div> -->
-                <!-- </div> -->
             </div>
         </section>
 
@@ -157,6 +203,16 @@
                     </div>
                 </div>
                 <div class="skill">
+                    <p class="skills-title hidden">FRONTEND</p>
+                    <div class="specific-skills">
+                        <p class="specific-skills-animation3 hidden-horizontal">JavaScript</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">ReactJS</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">HTML</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">CSS</p>
+                        <p class="specific-skills-animation3 hidden-horizontal">JavaFX</p>
+                    </div>
+                </div>
+                <div class="skill">
                     <p class="skills-title hidden">CONCEPTS & PRACTICES</p>
                     <div class="specific-skills">
                         <p class="specific-skills-animation2 hidden-horizontal">OOP</p>
@@ -165,16 +221,6 @@
                         <p class="specific-skills-animation2 hidden-horizontal">GraphRAG</p>
                         <p class="specific-skills-animation2 hidden-horizontal">Design patterns</p>
                         <p class="specific-skills-animation2 hidden-horizontal">Agile Methodology (SCRUM, CI, CD)</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p class="skills-title hidden">FRONTEND</p>
-                    <div class="specific-skills">
-                        <p class="specific-skills-animation3 hidden-horizontal">JavaScript</p>
-                        <p class="specific-skills-animation3 hidden-horizontal">ReactJS</p>
-                        <p class="specific-skills-animation3 hidden-horizontal">HTML</p>
-                        <p class="specific-skills-animation3 hidden-horizontal">CSS</p>
-                        <p class="specific-skills-animation3 hidden-horizontal">JavaFX</p>
                     </div>
                 </div>
                 <div class="skill">
@@ -195,7 +241,6 @@
                         <p class="specific-skills-animation5 hidden-horizontal">Git</p>
                         <p class="specific-skills-animation5 hidden-horizontal">Bitbucket</p>
                         <p class="specific-skills-animation5 hidden-horizontal">Gradle</p>
-                        <p class="specific-skills-animation5 hidden-horizontal">Jenkins</p>
                     </div>
                 </div>
                 <div class="skill">
@@ -209,17 +254,19 @@
                 <div class="skill">
                     <p class="skills-title hidden">DBMS & QUERY LANGUAGES</p>
                     <div class="specific-skills">
+                        <p class="specific-skills-animation7 hidden-horizontal">SQL</p>
                         <p class="specific-skills-animation7 hidden-horizontal">PostgreSQL (pgAdmin)</p>
                         <p class="specific-skills-animation7 hidden-horizontal">Neo4j</p>
                         <p class="specific-skills-animation7 hidden-horizontal">Supabase</p>
-                        <p class="specific-skills-animation7 hidden-horizontal">SQL</p>
                         <p class="specific-skills-animation7 hidden-horizontal">Cypher</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <p class="skills-title hidden">OTHERS</p>
+                    <p class="skills-title hidden">ML/AI</p>
                     <div class="specific-skills">
-                        <p class="specific-skills-animation8 hidden-horizontal">Deep Learning (Pytorch, Google Colab)</p>
+                        <p class="specific-skills-animation8 hidden-horizontal">Object Classification</p>
+                        <p class="specific-skills-animation8 hidden-horizontal">Object Detection</p>
+                        <p class="specific-skills-animation8 hidden-horizontal">Segmentation</p>
                         <p class="specific-skills-animation8 hidden-horizontal">Langchain</p>
                         <p class="specific-skills-animation8 hidden-horizontal">Ragas</p>
                         <p class="specific-skills-animation8 hidden-horizontal">AI Integration</p>
@@ -230,8 +277,8 @@
 
         <section id="extracur">
             <div class="hackathon">
-                <p class="featured-projects-title hidden">Hackathons</p>
-                <div class="hack-proj hidden">
+                <p class="featured-projects-title hack-big-title hidden">Hackathons</p>
+                <div class="hack-proj">
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <div class="slider">
@@ -301,11 +348,11 @@
                                 <video controls>
                                     <source src="./images/hackathon/goodhands/demo.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
-                                  </video>
-                                  <video controls>
+                                </video>
+                                <video controls>
                                     <source src="./images/hackathon/goodhands/demo-1.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                                 <img id="slide3" src="./images/hackathon/goodhands/snacks.jpg">
                             </div>
                             <div class="slider-nav">
@@ -329,7 +376,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hack-proj hidden">
+                <!-- <div class="hack-proj hidden">
                     <div class="slider-container">
                         <div class="slider-wrapper">
                             <div class="slider">
@@ -357,20 +404,43 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     
         <section id="contact">
-            <h2 class="hidden">Let's connect!</h2>
-            <div class="contact-email email-animation hidden">
-                <p>annanguyn99@gmail.com</p>
-                <button onclick="copyLink()">
-                    <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4b4b4b" class="bi bi-copy" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
-                    </svg>
-                    <img id="tick-icon" style="display: none;" src="images/contacts/tick-icon.png">
-                </button>
+            <div class="contact-container">
+                <h2 class="hidden">Let's make something <span class="contact-quote">amazing</span>, together!</h2>
+                <div class="contact-email email-animation hidden">
+                    <p>annanguyn99@gmail.com</p>
+                    <button onclick="copyLink()">
+                        <svg id="copy-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4b4b4b" class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                        </svg>
+                        <img id="tick-icon" style="display: none;" src="images/contacts/tick-icon.png">
+                    </button>
+                </div>
+                <div id="contact-icon">
+                    <div class="contact-animation hidden-horizontal">
+                        <a href="https://github.com/annaznguyn" target="_blank">
+                            <img src="images/contacts/cyan-github.png" id="github-before">
+                            <img src="images/contacts/light-cyan-github.png" id="github-after">
+                        </a>
+                    </div>
+                    <div class="contact-animation hidden-horizontal">
+                        <a href="https://www.linkedin.com/in/anna-nguyen-09b038244/" target="_blank">
+                            <img src="images/contacts/cyan-linkedin.png" id="linkedin-before">
+                            <img src="images/contacts/light-cyan-linkedin.png" id="linkedin-after">
+                        </a>
+                    </div>
+                    <!-- <div class="contact-animation hidden-horizontal">
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:1464591c-eb6a-482a-94bb-cd6dbe7108f1" target="_blank">
+                            <img src="images/contacts/olive-resume.png" id="resume-before">
+                            <img src="images/contacts/light-olive-resume.png" id="resume-after">
+                        </a>
+                    </div> -->
+                </div>
+                <p class="credit">&copy; 2024 Anna Nguyen. All rights reserved.</p>
             </div>
             <div id="contact-icon">
                 <div class="contact-animation hidden-horizontal">
