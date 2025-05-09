@@ -32,7 +32,7 @@ let row_images = [
     'images/landing-pics/blue-mountain.jpg',
     'images/landing-pics/blue-mountain.jpg',
     'images/landing-pics/nibble.jpg',
-    'images/landing-pics/blue-mountain.jpg',
+    'images/landing-pics/anna-lego.jpg',
     'images/landing-pics/pumpkin.jpg',
     'images/landing-pics/blue-mountain.jpg',
     'images/landing-pics/blue-mountain.jpg',
